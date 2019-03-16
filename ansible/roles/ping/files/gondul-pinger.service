@@ -1,7 +1,7 @@
 [Unit]
 Description=Gondul ping collector
 Documentation=https://github.com/gathering/gondul
-After=network-online.target
+After=network-online.target postgresql.service
 
 [Service]
 ExecStart=/opt/gondul/collectors/ping.pl
